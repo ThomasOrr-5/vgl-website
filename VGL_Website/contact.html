@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p>page5</p>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | VGL, Inc.</title>
+<style>
+:root {
+  --bg-main: #0f1620;
+  --bg-light: #1c2533;
+  --accent: #4fb3ad;
+  --text-light: #e6edf3;
+}
+body { margin:0; font-family: Arial; background: var(--bg-main); color: var(--text-light); }
+nav { background: var(--bg-light); padding:16px 30px; display:flex; justify-content:space-between; align-items:center; }
+nav img { height: 40px; }
+nav a { text-decoration:none; color: var(--text-light); margin-left:20px; font-weight:500; }
+section { max-width:600px; margin:40px auto; padding:40px 20px; background: var(--bg-light); border-radius:6px; }
+input, textarea { width:100%; padding:10px; margin-bottom:15px; border-radius:4px; border:1px solid #444; background:#0f1620; color:var(--text-light); }
+input::placeholder, textarea::placeholder { color: #aaa; }
+button { background: var(--accent); color:#000; padding:14px; border:none; border-radius:4px; cursor:pointer; }
+a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html"><img src="vgl-logo.png" alt="VGL, Inc. Logo"></a>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="faq.html">FAQ</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+<section>
+<h1>Request Information</h1>
+<form name="lead-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+  <input type="hidden" name="form-name" value="lead-form">
+  <input type="hidden" name="bot-field">
+  <input type="text" name="business" placeholder="Business Name" required>
+  <input type="address" name="address" placeholder="Business Adress" required>
+  <input type="text" name="name" placeholder="Contact Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="tel" name="phone" placeholder="Phone Number">
+  <textarea name="message" placeholder="Tell us about your location..."></textarea>
+  <button type="submit">Submit Request</button>
+</form>
+<br><a href="index.html">← Back Home</a>
+</section>
+</body>
+</html>
